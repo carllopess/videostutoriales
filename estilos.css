@@ -1,0 +1,239 @@
+/* ===================== */
+/* ESTILOS GENERALES PARA TODAS LAS PÁGINAS */
+/* ===================== */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #ffe6f0, #fff0d4);
+  color: #3b2a2a;
+}
+
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  background: rgba(255,255,255,0.95);
+  padding: 35px;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+h2 {
+  color: #c75b7a;
+  border-left: 6px solid #FF8FAB;
+  padding-left: 12px;
+  margin-top: 20px;
+}
+
+/* ===================== */
+/* TABLAS BONITAS */
+/* ===================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+th, td {
+  border: 1px solid #ffc3a0;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #ffb6b9;
+  color: #3b2a2a;
+}
+
+tr:nth-child(even) {
+  background-color: #fff0f3;
+}
+
+
+  /* CENTRAR BOTONES PRINCIPAL Y VIDEO GENERAL */
+.botones-principal.video-general {
+  display: flex;             /* Flexbox */
+  justify-content: center;   /* Centra horizontalmente */
+  flex-direction: column;    /* Hace que los botones se pongan uno debajo del otro */
+  align-items: center;       /* Centra horizontalmente cada botón */
+  gap: 15px;                 /* Espacio entre los botones */
+  margin-top: 30px;          /* Separación arriba */
+}
+
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 15px;
+  font-weight: bold;
+  color: rgb(32, 2, 2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* ===================== */
+/* FOOTER */
+/* ===================== */
+footer {
+  text-align: center;
+  padding: 25px 20px;
+  color: #5a4b4b;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-top: 3px solid #FFB6B9;
+}
+
+/* ===================== */
+/* COLORES POR PÁGINA */
+/* ===================== */
+
+/* ---------- PÁGINA PRINCIPAL ---------- */
+body.index {
+  background: linear-gradient(135deg, #ffdee9, #ffb6b9);
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom: 5px solid #ff8fab;
+  color: #ff8fab;
+}
+
+nav button {
+  border: none;
+  padding: 16px 28px;
+  margin: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Botones de la página principal */
+
+.Botonesdelapáginaprincipal {
+  display: flex;             /* Para centrar */
+  justify-content: center;   /* Centra horizontalmente */
+  margin-top: 30px;          /* Espacio arriba */
+}
+
+
+nav button:nth-child(1) { background: #FF69B4; color: white; }
+nav button:nth-child(2) { background: #FFD700; color: #3b2a2a; }
+nav button:nth-child(3) { background: #87CEFA; color: #3b2a2a; }
+nav button:nth-child(4) { background: #90EE90; color: #3b2a2a; }
+nav button:nth-child(5) { background: #FFA07A; color: white; }
+nav button:nth-child(6) { background: #DA70D6; color: white; }
+
+nav button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  
+}
+
+/* ---------- GASTRONOMÍA ---------- */
+header.gastronomia-header {
+  background: linear-gradient(135deg, #ff9bbc, #ffd6a5);
+  color: white;
+}
+
+/* Botones gastronómicos */
+.btn.btn-gas { background: #ff69b4; }
+.btn.btn-gas:hover { background: #ff85c1; }
+
+/* ---------- CONTABILIDAD ---------- */
+header.contabilidad-header {
+  background: linear-gradient(135deg, #ffd700, #ffec8b);
+  color: #3b2a2a;
+}
+.btn.btn-cont { background: #ffd700; color:#3b2a2a; }
+.btn.btn-cont:hover { background: #ffe733; }
+
+/* ---------- MECÁNICA AUTOMOTRIZ ---------- */
+header.mecanica-header {
+  background: linear-gradient(135deg, #87cefa, #add8e6);
+  color: #3b2a2a;
+}
+.btn.btn-mec { background: #1e90ff; }
+.btn.btn-mec:hover { background: #63b3ed; }
+
+/* ---------- CONSTRUCCIÓN CIVIL ---------- */
+header.construccion-header {
+  background: linear-gradient(135deg, #90ee90, #c6f7d0);
+  color: #3b2a2a;
+}
+.btn.btn-con { background: #32cd32; }
+.btn.btn-con:hover { background: #7be37b; }
+
+/* ---------- SISTEMAS INFORMÁTICOS ---------- */
+header.sistemas-header {
+  background: linear-gradient(135deg, #ffa07a, #ffc7a0);
+  color: white;
+}
+.btn.btn-sis { background: #ff7f50; }
+.btn.btn-sis:hover { background: #ff9b7f; }
+
+/* ---------- ELECTRÓNICA ---------- */
+header.electronica-header {
+  background: linear-gradient(135deg, #da70d6, #e6a3f7);
+  color: white;
+}
+.btn.btn-ele { background: #ba55d3; }
+.btn.btn-ele:hover { background: #d580f0; }
+
+/* ===================== */
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  section { margin: 30px 20px; padding: 25px; }
+  nav button { padding: 12px 20px; font-size: 0.95rem; }
+}
+
+/* BOTÓN VIDEO GENERAL */
+.video-general {
+  display: flex;             /* Para centrar */
+  justify-content: center;   /* Centra horizontalmente */
+  margin-top: 30px;          /* Espacio arriba */
+}
+
+.btn-video {
+  background: linear-gradient(135deg, #FF8FAB, #FFD6A5);
+  color: white;
+  font-size: 1.2rem;
+  padding: 18px 35px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-video:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  background: linear-gradient(135deg, #FFB6B9, #FF9BBC);
+}
